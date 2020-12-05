@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Первая лабораторная работа. Декабрь</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            Брованова Елизавета, группа P3231, вариант 2703
+        </div>
+        <form id="formElem">
+            <div id="change">
+                Выберите X:<br><br>
+                <button type="button" name="x" value="-3" >-3</button>
+                <button type="button" name="x" value="-2">-2</button>
+                <button type="button" name="x" value="-1">-1</button><br>
+                <button type="button" name="x" value="0">0</button>
+                <button type="button" name="x" value="1">1</button>
+                <button type="button" name="x" value="2">2</button><br>
+                <button type="button" name="x" value="3">3</button>
+                <button type="button" name="x" value="4">4</button>
+                <button type="button" name="x" value="5">5</button><br><br>
+            </div>
+            <div id="y">
+                <label for="yValue">Введите Y:</label><br><br>
+                <input type="text" id="yValue" placeholder="-5...5" onkeyup="validateY(this.value)"><br>
+                <p id="errorY"></p>
+            </div>
+            <div id="r">
+                <label for="rValue">Введите R:</label><br><br>
+                <input type="text" id="rValue" placeholder="1...4" onkeyup="validateR(this.value)"><br>
+                <p id="errorR"></p>
+            </div>
+            <div id="sendSubmit">
+                <input id="send" type="button" name="send" value="Отправить" onclick="execute()">
+                <p id="error"></p>
+            </div>
+        </form>
+        <div class="myCanvas" id="graphic">
+            <canvas id="myCanvas" width="300px" height="300px" style="border:1px solid #d3d3d3"></canvas>
+            <script src="hz.js"></script>
+        </div>
+        <div id="table">
+            <table id="result_table">
+                <thead>
+                    <tr>
+                        <th scope="col">X</th>
+                        <th scope="col">Y</th>
+                        <th scope="col">R</th>
+                        <th scope="col">Result</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Benchmark</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="footer">
+            г. Санкт-Петербург, 2020 г.
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

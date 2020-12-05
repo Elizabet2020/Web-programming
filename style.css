@@ -1,0 +1,113 @@
+body{
+    background-color: #16ffeb;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-color: #144955;
+    width: 100%;
+    height: 10%;
+    color: #d37f1f;
+    padding: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+#change {
+    float: left;
+    width: 15%;
+    height: 280px;
+    padding-left: 1%;
+    margin: 1%;
+    font-size: 20px;
+    position: absolute;
+}
+#y {
+    position: absolute;
+    left: 12%;
+    width: 15%;
+    height: 280px;
+    padding-left: 1%;
+    margin: 1%;
+    font-size: 20px;
+}
+#r{
+    left: 26%;
+    width: 15%;
+    height: 280px;
+    padding-left: 1%;
+    margin: 1%;
+    font-size: 20px;
+    position: absolute;
+}
+button{
+    height: 30px;
+    width: 30px;
+    padding: 1%;
+    margin: 1%;
+}
+#clear{
+    left: 26%;
+    top: 25%;
+    width: 25%;
+    height: 280px;
+    padding-left: 1%;
+    margin: 1%;
+    font-size: 20px;
+    position: absolute;
+}
+#sendSubmit{
+    left: 12%;
+    top: 25%;
+    width: 25%;
+    height: 280px;
+    padding-left: 1%;
+    margin: 1%;
+    font-size: 20px;
+    position: absolute;
+}
+.myCanvas{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: #21ccd0;
+}
+#table{
+    position: absolute;
+    left: 50%;
+    margin: 1%;
+}
+table{
+    width: 55%;
+    height: 50px;
+
+}
+table, tr, th {
+    border: 4px outset deepskyblue;
+    border-spacing: 5px;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+tr, th{
+    padding: 20px;
+}
+#footer{
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-color: #144955;
+    color: #d37f1f;
+    padding: 1%;
+    font-size: 30px;
+}
+#errorY, #errorR, #error{
+    font-size: 15px;
+    color: #ff1035;
+}
+#table{
+    height: 530px;
+    overflow: auto;
+}
