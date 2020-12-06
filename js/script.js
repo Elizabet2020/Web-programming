@@ -5,17 +5,17 @@ function execute() {
     chooseX();
     let y = $('#yValue').val().replace(",", ".");
     let r = $('#rValue').val().replace(",", ".");
-    if(validateX() && validateR(r) && validateY(y)){
-        //for (let i = document.getElementById("result_table").getElementsByTagName('tr').length-1; i; i--) {
-          //  document.getElementById('result_table').deleteRow(i);
-        //}
+    if(validateX() && validateY(y) && validateR(r)){
+        for (let i = document.getElementById("result_table").getElementsByTagName('tr').length-1; i; i--) {
+            document.getElementById('result_table').deleteRow(i);
+        }
         errors.innerHTML = "";
         $.ajax("php/server.php?x="+X+"&y="+y+"&r="+r)
             .done(function (data) {
                 $('#result_table').append(data);
             });
     } else {
-        errors.innerHTML = "Вы не ввели данные/ввели неверные данные";
+        errors.innerHTML = "Вы не ввели данные/ввели неверные данные.";
     }
 }
 
@@ -23,6 +23,8 @@ function chooseX() {
     let arrayX = document.getElementsByName("x");
     for (let i=0; i<arrayX.length; i++){
         arrayX[i].onclick = function () {
+            $('#change .button_fixed').removeClass('button_fixed').addClass('button_no_fixed');
+            $(this).removeClass('button_no_fixed').addClass('button_fixed');
             X = arrayX[i].value;
         };
     }

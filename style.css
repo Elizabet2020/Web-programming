@@ -47,6 +47,13 @@ button{
     padding: 1%;
     margin: 1%;
 }
+#change .button_no_fixed {
+    color: black;
+}
+#change .button_fixed{
+    color: #16ffeb;
+    background: #144955;
+}
 #clear{
     left: 26%;
     top: 25%;

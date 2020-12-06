@@ -44,7 +44,7 @@ array_push($_SESSION['results'], $result);
 
 $response = "";
 if (isset($_SESSION['results'])){
-    //foreach ($_SESSION['results'] as $result){
+    foreach ($_SESSION['results'] as $result){
         $response .= "<tr>
                     <th>$result[0]</th>
                     <th>$result[1]</th>
@@ -53,6 +53,6 @@ if (isset($_SESSION['results'])){
                     <th>$result[4]</th>
                     <th>$result[5]</th>
              </tr>";
-    //}
+    }
 }
 echo $response;
