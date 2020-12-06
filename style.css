@@ -78,6 +78,7 @@ button{
     left: 14%;
     top: 32%;
     position: absolute;
+    font-weight: bold;
 }
 .myCanvas{
     position: absolute;

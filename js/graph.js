@@ -68,6 +68,3 @@ g.fillText("-R", 44, 144);
 g.fillText("-R/2", 90, 144);
 g.fillText("R/2", 190, 144);
 g.fillText("R", 246, 144);
-
-
-
