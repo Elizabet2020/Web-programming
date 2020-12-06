@@ -3,7 +3,7 @@ div { height:  2000px; }
 body{
     background-color: #16ffeb;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,6 @@ body{
     height: 200px;
     padding-left: 1%;
     margin: 1%;
-    font-size: 20px;
     position: absolute;
 }
 #y {
@@ -32,7 +31,6 @@ body{
     height: 100px;
     padding-left: 1%;
     margin: 1%;
-    font-size: 20px;
 }
 #r{
     left: 26%;
@@ -40,7 +38,6 @@ body{
     height: 100px;
     padding-left: 1%;
     margin: 1%;
-    font-size: 20px;
     position: absolute;
 }
 button{
@@ -58,22 +55,20 @@ button{
 }
 #clearButton{
     left: 26%;
-    top: 25%;
+    top: 27%;
     width: 12.5%;
     height: 25px;
     padding-left: 1%;
     margin: 1%;
-    font-size: 20px;
     position: absolute;
 }
 #sendButton {
     left: 12%;
-    top: 25%;
+    top: 27%;
     width: 12.5%;
     height: 50px;
     padding-left: 1%;
     margin: 1%;
-    font-size: 20px;
     position: absolute;
 }
 #error{
@@ -93,20 +88,20 @@ button{
     position: absolute;
     left: 50%;
     margin: 1%;
+    height: 530px;
+    overflow: auto;
 }
 table{
     width: 600px;
     height: 50px;
-
 }
 table, tr, th {
     border: 4px outset deepskyblue;
     border-spacing: 5px;
     border-collapse: collapse;
     vertical-align: middle;
-}
-tr, th{
-    padding: 20px;
+    font-size: 15px;
+
 }
 #footer{
     position: absolute;
@@ -123,10 +118,6 @@ tr, th{
     font-size: 15px;
     color: #ff1035;
 }
-#table{
-    height: 530px;
-    overflow: auto;
-}
-#tHeader th{
+#tHeader > th{
     font-weight: 900;
 }

@@ -1,4 +1,4 @@
-var X;
+let X;
 
 function execute() {
     let errors = document.getElementById("error");
