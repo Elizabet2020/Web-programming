@@ -10,6 +10,7 @@
         <div id="header">
             Брованова Елизавета, группа P3231, вариант 2703
         </div>
+        <br>
         <form id="formElem">
             <div id="change">
                 Выберите X:<br><br>
@@ -37,7 +38,7 @@
                 <input id="send" type="button" name="send" value="Отправить" onclick="execute()">
             </div>
             <div id="clearButton">
-                <input id="clear" type="button" name="send" value="Очистить" onclick="clearTable()">
+                <input id="clear" type="button" name="clear" value="Очистить" onclick="clearTable()">
             </div>
             <p id="error"></p>
         </form>
@@ -47,16 +48,14 @@
         </div>
         <div id="table">
             <table id="result_table">
-                <thead>
-                    <tr id="tHeader">
-                        <th scope="col">X</th>
-                        <th scope="col">Y</th>
-                        <th scope="col">R</th>
-                        <th scope="col">Result</th>
-                        <th scope="col">Time</th>
-                        <th scope="col">Code running time</th>
-                    </tr>
-                </thead>
+                <tr id="tHeader">
+                    <th scope="col">X</th>
+                    <th scope="col">Y</th>
+                    <th scope="col">R</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Code running time</th>
+                </tr>
             </table>
         </div>
         <div id="footer">
