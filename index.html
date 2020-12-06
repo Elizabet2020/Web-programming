@@ -13,15 +13,15 @@
         <form id="formElem">
             <div id="change">
                 Выберите X:<br><br>
-                <button type="button" class="button_no_fixed" name="x" value="-3" >-3</button>
-                <button type="button" class="button_no_fixed" name="x" value="-2">-2</button>
-                <button type="button" class="button_no_fixed" name="x" value="-1">-1</button><br>
-                <button type="button" class="button_no_fixed" name="x" value="0">0</button>
-                <button type="button" class="button_no_fixed" name="x" value="1">1</button>
-                <button type="button" class="button_no_fixed" name="x" value="2">2</button><br>
-                <button type="button" class="button_no_fixed" name="x" value="3">3</button>
-                <button type="button" class="button_no_fixed" name="x" value="4">4</button>
-                <button type="button" class="button_no_fixed" name="x" value="5">5</button><br><br>
+                <button type="button" class="button_no_fixed" name="x" value="-3" onclick="chooseX()" >-3</button>
+                <button type="button" class="button_no_fixed" name="x" value="-2" onclick="chooseX()" >-2</button>
+                <button type="button" class="button_no_fixed" name="x" value="-1" onclick="chooseX()" >-1</button><br>
+                <button type="button" class="button_no_fixed" name="x" value="0" onclick="chooseX()" >0</button>
+                <button type="button" class="button_no_fixed" name="x" value="1" onclick="chooseX()" >1</button>
+                <button type="button" class="button_no_fixed" name="x" value="2" onclick="chooseX()" >2</button><br>
+                <button type="button" class="button_no_fixed" name="x" value="3" onclick="chooseX()" >3</button>
+                <button type="button" class="button_no_fixed" name="x" value="4" onclick="chooseX()" >4</button>
+                <button type="button" class="button_no_fixed" name="x" value="5" onclick="chooseX()" >5</button><br><br>
             </div>
             <div id="y">
                 <label for="yValue">Введите Y:</label><br><br>
@@ -33,10 +33,13 @@
                 <input type="text" id="rValue" placeholder="1...4" onkeyup="validateR(this.value)"><br>
                 <p id="errorR"></p>
             </div>
-            <div id="sendSubmit">
+            <div id="sendButton">
                 <input id="send" type="button" name="send" value="Отправить" onclick="execute()">
-                <p id="error"></p>
             </div>
+            <div id="clearButton">
+                <input id="clear" type="button" name="send" value="Очистить" onclick="clearTable()">
+            </div>
+            <p id="error"></p>
         </form>
         <div class="myCanvas" id="graphic">
             <canvas id="myCanvas" width="300px" height="300px" style="border:1px solid #d3d3d3"></canvas>
@@ -45,13 +48,13 @@
         <div id="table">
             <table id="result_table">
                 <thead>
-                    <tr>
+                    <tr id="tHeader">
                         <th scope="col">X</th>
                         <th scope="col">Y</th>
                         <th scope="col">R</th>
                         <th scope="col">Result</th>
                         <th scope="col">Time</th>
-                        <th scope="col">Benchmark</th>
+                        <th scope="col">Code running time</th>
                     </tr>
                 </thead>
             </table>

@@ -5,7 +5,6 @@ if (isset($_GET["x"])) $x = $_GET["x"];
 if (isset($_GET["y"])) $y = $_GET["y"];
 if (isset($_GET["r"])) $r = $_GET["r"];
 
-
 $check = "miss";
 $fail = "";
 

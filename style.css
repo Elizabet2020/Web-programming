@@ -16,8 +16,8 @@ body{
 }
 #change {
     float: left;
-    width: 15%;
-    height: 280px;
+    width: 13%;
+    height: 200px;
     padding-left: 1%;
     margin: 1%;
     font-size: 20px;
@@ -27,7 +27,7 @@ body{
     position: absolute;
     left: 12%;
     width: 15%;
-    height: 280px;
+    height: 100px;
     padding-left: 1%;
     margin: 1%;
     font-size: 20px;
@@ -35,7 +35,7 @@ body{
 #r{
     left: 26%;
     width: 15%;
-    height: 280px;
+    height: 100px;
     padding-left: 1%;
     margin: 1%;
     font-size: 20px;
@@ -54,24 +54,29 @@ button{
     color: #16ffeb;
     background: #144955;
 }
-#clear{
+#clearButton{
     left: 26%;
     top: 25%;
-    width: 25%;
-    height: 280px;
+    width: 12.5%;
+    height: 25px;
     padding-left: 1%;
     margin: 1%;
     font-size: 20px;
     position: absolute;
 }
-#sendSubmit{
+#sendButton {
     left: 12%;
     top: 25%;
-    width: 25%;
-    height: 280px;
+    width: 12.5%;
+    height: 50px;
     padding-left: 1%;
     margin: 1%;
     font-size: 20px;
+    position: absolute;
+}
+#error{
+    left: 14%;
+    top: 32%;
     position: absolute;
 }
 .myCanvas{
@@ -86,7 +91,7 @@ button{
     margin: 1%;
 }
 table{
-    width: 55%;
+    width: 600px;
     height: 50px;
 
 }
@@ -103,7 +108,7 @@ tr, th{
     position: absolute;
     height: 5%;
     width: 100%;
-    bottom: 0px;
+    bottom: 0;
     text-align: center;
     background-color: #144955;
     color: #d37f1f;
@@ -117,4 +122,7 @@ tr, th{
 #table{
     height: 530px;
     overflow: auto;
+}
+#tHeader th{
+    font-weight: 900;
 }

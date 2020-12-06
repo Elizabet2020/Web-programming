@@ -2,7 +2,6 @@ var X;
 
 function execute() {
     let errors = document.getElementById("error");
-    chooseX();
     let y = $('#yValue').val().replace(",", ".");
     let r = $('#rValue').val().replace(",", ".");
     if(validateX() && validateY(y) && validateR(r)){
@@ -64,4 +63,13 @@ function validateR(rValue) {
         return true;
     }
     return false;
+}
+
+function clearTable() {
+    $.ajax("php/clearTable.php?")
+        .done(function () {
+            for (let i = document.getElementById("result_table").getElementsByTagName('tr').length-1; i; i--) {
+                document.getElementById('result_table').deleteRow(i);
+            }
+        });
 }
